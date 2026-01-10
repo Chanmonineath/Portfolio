@@ -86,7 +86,7 @@ const App = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 lg:space-x-10 text-sm font-medium uppercase tracking-widest">
             <a href="#home" className="hover:text-gray-400 transition-colors duration-200">
-              Home
+              {t.nav.home}
             </a>
             <a href="#work" className="hover:text-gray-400 transition-colors duration-200">
               {t.nav.work}
@@ -95,10 +95,10 @@ const App = () => {
               {t.nav.about}
             </a>
             <a href="#skills" className="hover:text-gray-400 transition-colors duration-200">
-              Skills
+              {t.nav.skills}
             </a>
             <a href="#education" className="hover:text-gray-400 transition-colors duration-200">
-              Education
+              {t.nav.education}
             </a>
             <a href="#contact" className="hover:text-gray-400 transition-colors duration-200">
               {t.nav.contact}
@@ -132,7 +132,7 @@ const App = () => {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 space-y-4 pb-4 animate-slideInUp">
             <a href="#home" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
-              Home
+              {t.nav.home}
             </a>
             <a href="#work" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
               {t.nav.work}
@@ -141,10 +141,10 @@ const App = () => {
               {t.nav.about}
             </a>
             <a href="#skills" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
-              Skills
+              {t.nav.skills}
             </a>
             <a href="#education" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
-              Education
+              {t.nav.education}
             </a>
             <a href="#contact" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
               {t.nav.contact}
