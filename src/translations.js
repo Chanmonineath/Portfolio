@@ -1,8 +1,11 @@
 export const translations = {
   en: {
     nav: {
+      home: 'Home',
       work: 'Projects',
       about: 'About',
+      skills: 'Skills',
+      education: 'Education',
       contact: 'Contact',
     },
     hero: {
