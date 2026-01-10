@@ -85,11 +85,20 @@ const App = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 lg:space-x-10 text-sm font-medium uppercase tracking-widest">
+            <a href="#home" className="hover:text-gray-400 transition-colors duration-200">
+              Home
+            </a>
             <a href="#work" className="hover:text-gray-400 transition-colors duration-200">
               {t.nav.work}
             </a>
             <a href="#about" className="hover:text-gray-400 transition-colors duration-200">
               {t.nav.about}
+            </a>
+            <a href="#skills" className="hover:text-gray-400 transition-colors duration-200">
+              Skills
+            </a>
+            <a href="#education" className="hover:text-gray-400 transition-colors duration-200">
+              Education
             </a>
             <a href="#contact" className="hover:text-gray-400 transition-colors duration-200">
               {t.nav.contact}
@@ -122,11 +131,20 @@ const App = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 space-y-4 pb-4 animate-slideInUp">
+            <a href="#home" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
+              Home
+            </a>
             <a href="#work" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
               {t.nav.work}
             </a>
             <a href="#about" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
               {t.nav.about}
+            </a>
+            <a href="#skills" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
+              Skills
+            </a>
+            <a href="#education" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
+              Education
             </a>
             <a href="#contact" className="block hover:text-gray-400 transition-colors text-sm font-medium uppercase">
               {t.nav.contact}
@@ -136,7 +154,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center px-3 sm:px-4 md:px-6 overflow-hidden pt-24 sm:pt-20 md:pt-0">
+      <section id="home" className="relative min-h-screen flex items-center px-3 sm:px-4 md:px-6 overflow-hidden pt-24 sm:pt-20 md:pt-0">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
           <div className="lg:col-span-8 z-10">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-4 sm:mb-6 md:mb-8 animate-slideInUp">
@@ -290,7 +308,7 @@ const App = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-12 sm:py-16 md:py-32 bg-[#F2F2F2] px-3 sm:px-4 md:px-6">
+      <section id="skills" className="py-12 sm:py-16 md:py-32 bg-[#F2F2F2] px-3 sm:px-4 md:px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 md:gap-16">
           <div className="lg:col-span-5">
             <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-400 mb-2 sm:mb-4">
@@ -333,7 +351,7 @@ const App = () => {
       </section>
 
       {/* Education Section */}
-      <section className="py-16 md:py-32 bg-[#F2F2F2] px-4 md:px-6">
+      <section id="education" className="py-16 md:py-32 bg-[#F2F2F2] px-4 md:px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>
             <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">
