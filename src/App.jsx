@@ -38,7 +38,7 @@ const App = () => {
       id: 1,
       title: language === 'en' ? "Children Safe Monitoring" : "子どもの安全監視",
       category: language === 'en' ? "AI" : "AI",
-      image: "/photo/Screenshot 2025-12-09 114219.png",
+      image: "./photo/Screenshot 2025-12-09 114219.png",
       description: language === 'en'
         ? "A web application designed to help parents monitor their children's safety with real-time alerts and location tracking features."
         : "保護者が子どもの安全をリアルタイムアラートと位置情報追跡機能で監視できるように設計されたウェブアプリケーション。",
@@ -48,7 +48,7 @@ const App = () => {
       id: 2,
       title: language === 'en' ? "Wedding Planner" : "ウェディングプランナー",
       category: language === 'en' ? "Web" : "ウェブ",
-      image: "/photo/Screenshot 2025-11-29 174707.png",
+      image: "./photo/Screenshot 2025-11-29 174707.png",
       description: language === 'en'
         ? "A comprehensive web application for planning and managing wedding events with budget tracking, guest lists, and timeline management."
         : "予算追跡、ゲストリスト、タイムライン管理を備えた結婚式のイベント計画と管理のための包括的なウェブアプリケーション。",
@@ -160,7 +160,7 @@ const App = () => {
           <div className="lg:col-span-4 relative mt-8 md:mt-0">
             <div className="w-full max-w-sm mx-auto lg:max-w-none aspect-[3/4] bg-gray-300 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-2xl rotate-0 sm:rotate-3 transition-transform hover:rotate-0 duration-500 hover:shadow-none">
               <img
-                src="/photo/photo_2026-01-10_15-57-22.jpg"
+                src="./photo/photo_2026-01-10_15-57-22.jpg"
                 alt="Professional portrait"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
@@ -354,7 +354,7 @@ const App = () => {
           <div className="hidden md:block">
             <div className="w-full aspect-square bg-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/photo/AUPP-Building.jpg"
+                src="./photo/AUPP-Building.jpg"
                 alt="University campus"
                 className="w-full h-full object-cover"
               />
