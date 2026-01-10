@@ -1,0 +1,156 @@
+export const translations = {
+  en: {
+    nav: {
+      work: 'Projects',
+      about: 'About',
+      contact: 'Contact',
+    },
+    hero: {
+      available: 'ICT Student at AUPP',
+      title1: 'Hi, I\'m',
+      title2: 'Neath',
+      title3: 'Passionate about Web Development & AI',
+      description: 'I\'m an ICT junior at American University of Phnom Penh with a passion for web development, computer vision, and technology for social impact. Welcome to my portfolio!',
+      viewWork: 'View My Projects',
+    },
+    ticker: {
+      skills: ['React', 'JavaScript', 'Python'],
+    },
+    work: {
+      label: 'My Work',
+      title: 'Featured Projects',
+      filters: ['all', 'web', 'ai'],
+    },
+    skills: {
+      label: 'Skills',
+      title: 'What I Can Do',
+      description: 'I have developed a diverse skill set through my ICT studies and project work, combining frontend development with emerging technologies.',
+      categories: [
+        { name: 'Frontend', description: 'HTML, CSS, JavaScript, React, Tailwind CSS' },
+        { name: 'Backend & AI', description: 'Python, JavaScript, OCR, YOLO, TensorFlow' },
+        { name: 'Tools', description: 'Git, GitHub, VS Code, Figma' },
+      ],
+      proficiencies: [
+        { label: 'HTML / CSS', progress: '90%' },
+        { label: 'JavaScript / React', progress: '85%' },
+        { label: 'Python', progress: '80%' },
+        { label: 'Tailwind CSS', progress: '90%' },
+        { label: 'Git & GitHub', progress: '85%' },
+        { label: 'Web Design', progress: '80%' },
+      ],
+    },
+    contact: {
+      title: 'Get in Touch',
+      description: 'Have questions about my work or interested in collaborating? Feel free to reach out!',
+      email: 'Email',
+      connect: 'LinkedIn',
+      form: {
+        name: 'Full Name',
+        email: 'Email Address',
+        message: 'Message',
+        namePlaceholder: 'Your Name',
+        emailPlaceholder: 'your.email@example.com',
+        messagePlaceholder: 'Tell me about your inquiry...',
+        send: 'Send Message',
+      },
+    },
+    footer: {
+      copyright: '© 2024 Chanmonineath | ICT Student | AUPP',
+    },
+    about: {
+      label: 'About Me',
+      title: 'Who I Am',
+      description: 'I am an ICT junior student at the American University of Phnom Penh (AUPP) with a strong interest in web development, artificial intelligence, and technology for social good. I have participated in multiple innovation competitions related to the Sustainable Development Goals (SDGs), where I contributed to designing and developing technology-driven solutions aimed at supporting Cambodia\'s future development.\n\nAlongside my technical work, I have engaged in volunteer activities that strengthened my teamwork, leadership, and communication skills. I am eager to apply my technical knowledge, continuously learn new technologies, and contribute effectively in a professional environment through an internship or entry-level opportunity.',
+      highlights: [
+        'ICT Junior at AUPP',
+        'Web Developer & AI Enthusiast',
+        'Passionate About Tech for Social Impact',
+      ],
+    },
+    education: {
+      label: 'Education',
+      title: 'Academic Background',
+      institution: 'American University of Phnom Penh (AUPP)',
+      degree: 'Bachelor\'s Degree',
+      major: 'ICT (Information & Communication Technology)',
+      year: 'Junior (Currently Studying)',
+    },
+  },
+  ja: {
+    nav: {
+      work: 'プロジェクト',
+      about: 'について',
+      contact: 'お問い合わせ',
+    },
+    hero: {
+      available: 'AUPP ICT学生',
+      title1: 'こんにちは、私は',
+      title2: '二アット',
+      title3: 'ウェブ開発とAIに情熱を持つ',
+      description: 'カンボジア・プノンペン米国大学(AUPP)のICT学部生で、ウェブ開発、コンピュータビジョン、社会的価値のあるテクノロジーに情熱を持っています。私のポートフォリオへようこそ！',
+      viewWork: 'プロジェクトを見る',
+    },
+    ticker: {
+      skills: ['React', 'JavaScript', 'Python'],
+    },
+    work: {
+      label: '私の作品',
+      title: 'ピックアッププロジェクト',
+      filters: ['すべて', 'ウェブ', 'AI'],
+    },
+    skills: {
+      label: 'スキル',
+      title: 'できることたち',
+      description: 'ICT学の学習とプロジェクト作業を通じて、多様なスキルセットを開発し、フロントエンド開発と新興技術を組み合わせています。',
+      categories: [
+        { name: 'フロントエンド', description: 'HTML, CSS, JavaScript, React, Tailwind CSS' },
+        { name: 'バックエンド & AI', description: 'Python, JavaScript, OCR, YOLO, TensorFlow' },
+        { name: 'ツール', description: 'Git, GitHub, VS Code, Figma' },
+      ],
+      proficiencies: [
+        { label: 'HTML / CSS', progress: '90%' },
+        { label: 'JavaScript / React', progress: '85%' },
+        { label: 'Python', progress: '80%' },
+        { label: 'Tailwind CSS', progress: '90%' },
+        { label: 'Git & GitHub', progress: '85%' },
+        { label: 'ウェブデザイン', progress: '80%' },
+      ],
+    },
+    contact: {
+      title: '連絡してください',
+      description: '仕事について質問がありますか？それとも協力に興味がありますか？お気軽にお問い合わせください。',
+      email: 'メール',
+      connect: 'LinkedIn',
+      form: {
+        name: 'フルネーム',
+        email: 'メールアドレス',
+        message: 'メッセージ',
+        namePlaceholder: 'あなたの名前',
+        emailPlaceholder: 'your.email@example.com',
+        messagePlaceholder: 'あなたの質問を教えてください...',
+        send: 'メッセージを送信',
+      },
+    },
+    footer: {
+      copyright: '© 2024 Chanmonineath | ICT学生 | AUPP',
+    },
+    about: {
+      label: '私について',
+      title: '私は誰か',
+      description: '私はカンボジア・プノンペン米国大学(AUPP)のICT学部生で、ウェブ開発、人工知能、社会的価値のあるテクノロジーに強い関心を持っています。持続可能な開発目標(SDG)に関連する複数のイノベーション競技会に参加し、カンボジアの将来の発展をサポートすることを目的とした技術駆動型ソリューションの設計と開発に貢献しました。\n\n技術的な仕事と並行して、ボランティア活動に従事し、チームワーク、リーダーシップ、コミュニケーションスキルを強化しました。インターンシップまたはエントリーレベルの機会を通じて、自分の技術知識を活かし、新しいテクノロジーを継続的に学び、職業環境で効果的に貢献することを楽しみにしています。',
+      highlights: [
+        'AUPP ICT学部生',
+        'ウェブデベロッパー・AI愛好家',
+        '社会への技術の力を信じる',
+      ],
+    },
+    education: {
+      label: '教育',
+      title: '学歴',
+      institution: 'カンボジア・プノンペン米国大学(AUPP)',
+      degree: '学位',
+      major: 'ICT (情報通信技術)',
+      year: '学部生（現在勉学中）',
+    },
+  },
+};
