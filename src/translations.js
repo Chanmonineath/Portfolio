@@ -78,9 +78,14 @@ export const translations = {
   },
   ja: {
     nav: {
+      home: 'ホーム',
       work: 'プロジェクト',
       about: 'について',
+      skills: 'スキル',
+      education: '教育',
       contact: 'お問い合わせ',
+
+
     },
     hero: {
       available: 'AUPP ICT学生',
