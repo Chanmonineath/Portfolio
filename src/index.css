@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +26,8 @@ body {
 
 /* Custom animations and styles */
 @keyframes glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   50% {
@@ -39,7 +40,7 @@ body {
 }
 
 .border-text {
-  -webkit-text-stroke: 1px #2D2D2D;
+  -webkit-text-stroke: 1px #2d2d2d;
   color: transparent;
 }
 
@@ -71,9 +72,10 @@ body {
   body {
     overflow-x: hidden;
   }
-  
+
   /* Ensure touch targets are at least 44px */
-  button, a {
+  button,
+  a {
     min-height: 44px;
     min-width: 44px;
   }
@@ -84,8 +86,13 @@ body {
   body {
     font-size: 14px;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     word-break: break-word;
   }
 }
