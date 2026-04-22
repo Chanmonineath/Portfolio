@@ -49,7 +49,7 @@ const Resume = () => {
     ],
     achievements: [
       "Techno Digital Talent Scholarship – 100% – AUPP",
-      "Scholarship – 70% – Cambodia Academy of Digital Technology (CADT)",
+      "Scholarship – 75% – Cambodia Academy of Digital Technology (CADT)",
       "Innovative Tech Challenge Season 2 – Top 6 – Developed 'Skin Apsor'",
       "AUPP Technology Center Volunteer Team – Operations Team Administrator",
       "Coursera: Master Full-Stack Web Development (Laravel & PHP)",
