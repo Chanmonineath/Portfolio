@@ -5,9 +5,7 @@ export default function Projects({ t, projects, activeTab, setActiveTab }) {
   const filteredProjects =
     activeTab === "all"
       ? projects
-      : projects.filter((p) =>
-          p.category.toLowerCase().includes(activeTab.toLowerCase()),
-        );
+      : projects.filter((p) => p.categoryKey === activeTab);
 
   return (
     <section
@@ -26,20 +24,20 @@ export default function Projects({ t, projects, activeTab, setActiveTab }) {
             </p>
           </div>
           <div className="flex flex-wrap gap-2 sm:gap-3">
-            {t.work.filters.map((tab) => (
+            {t.work.filters.map(({ key, label }) => (
               <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
+                key={key}
+                onClick={() => setActiveTab(key)}
                 className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest transition-all duration-200 border
                   ${
-                    activeTab === tab
+                    activeTab === key
                       ? "bg-black text-white border-black shadow-md scale-105"
                       : "bg-white text-gray-700 border-gray-200 hover:border-black hover:text-black"
                   }
                 `}
-                aria-pressed={activeTab === tab}
+                aria-pressed={activeTab === key}
               >
-                {tab}
+                {label}
               </button>
             ))}
           </div>
@@ -67,11 +65,11 @@ export default function Projects({ t, projects, activeTab, setActiveTab }) {
               }}
             >
               {/* Image */}
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
                 {/* Optional overlay for hover */}

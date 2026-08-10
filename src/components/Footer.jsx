@@ -13,19 +13,26 @@ export default function Footer({ t }) {
         </p>
         <div className="flex space-x-6">
           <a
-            href="#"
+            href="https://github.com/Chanmonineath"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
             className="hover:text-gray-400 transition-colors duration-200 p-2"
           >
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/chanmonineath-sok/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="hover:text-gray-400 transition-colors duration-200 p-2"
           >
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="mailto:2023486sok@aupp.edu.kh"
+            aria-label="Email"
             className="hover:text-gray-400 transition-colors duration-200 p-2"
           >
             <Mail className="w-5 h-5" />

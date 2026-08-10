@@ -30,7 +30,7 @@ const Resume = () => {
         degree: "B.S. in Information and Communication Technology",
         school: "American University of Phnom Penh",
         period: "2023 – Present",
-        details: "GPA: 3.65",
+        details: "GPA: 3.66",
         special:
           "Japanese IT Pathway Program – Next-Make (Japanese language & practical IT skills)",
       },

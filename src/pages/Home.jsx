@@ -52,9 +52,13 @@ export default function Home({ t }) {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-6 h-6 text-gray-400" />
-      </div>
+      <a
+        href="#work"
+        aria-label="Scroll to projects"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
+      >
+        <ChevronDown className="w-6 h-6 text-gray-400 hover:text-gray-600 transition-colors" />
+      </a>
     </section>
   );
 }

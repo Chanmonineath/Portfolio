@@ -24,79 +24,100 @@ const App = () => {
           ? "Children Safe Detection Monitoring"
           : "子どもの安全監視",
       category: language === "en" ? "AI" : "AI",
+      categoryKey: "ai",
       image: "./photo/Screenshot 2025-12-09 114219.png",
       description:
         language === "en"
           ? "Real-time object detection for child safety monitoring."
           : "保護者が子どもの安全をリアルタイムで監視できる、位置情報追跡とアラート機能を備えたアプリケーション。",
       techStack: ["Python", "YOLO"],
+      githubUrl: "",
+      liveUrl: "",
     },
     {
       id: 2,
       title: language === "en" ? "Wedding Planner" : "ウェディングプランナー",
       category: language === "en" ? "Web" : "ウェブ",
+      categoryKey: "web",
       image: "./photo/Screenshot 2025-11-29 174707.png",
       description:
         language === "en"
           ? "A smart wedding planning web application that helps couples manage guest lists, RSVPs, and digital invitations."
           : "予算追跡、ゲストリスト、タイムライン管理を備えた結婚式のイベント計画と管理のための包括的なウェブアプリケーション。",
       techStack: ["HTML", "CSS", "Javascript", "MongoDB"],
+      githubUrl: "https://github.com/Chanmonineath/WedEase",
+      liveUrl: "",
     },
     {
       id: 3,
       title:
         language === "en" ? "Portfolio Website" : "ポートフォリオウェブサイト",
       category: language === "en" ? "Web" : "ウェブ",
+      categoryKey: "web",
       image: "./photo/Screenshot 2026-04-22 021935.png",
       description:
         language === "en"
           ? "A responsive and modern portfolio website built with React, Tailwind CSS, and Vite to showcase projects and skills."
           : "React、Tailwind CSS、Viteで構築された、プロジェクトとスキルを紹介するレスポンシブでモダンなポートフォリオサイト。",
       techStack: ["React", "Tailwind CSS", "Vite"],
+      githubUrl: "https://github.com/Chanmonineath/Portfolio",
+      liveUrl: "http://localhost:5173/Portfolio/",
     },
     {
       id: 4,
       title: language === "en" ? "Button Counter" : "ボタンカウンター",
       category: language === "en" ? "Web" : "ウェブ",
+      categoryKey: "web",
       image: "./photo/Screenshot 2026-04-22 020008.png",
       description:
         language === "en"
           ? "Created an interactive counter with persistent data storage."
           : "インタラクティブなカウンターで、データの永続化をサポートするアプリケーション。",
       techStack: ["TypeScript", "Svelte", "CSS", "Turso", "Vercel"],
+      githubUrl: "https://github.com/Numpang1812/button-counter-app",
+      liveUrl: "https://button-counter-app.vercel.app/",
     },
     {
       id: 5,
       title: language === "en" ? "Pigeon" : "Pigeon",
       category: language === "en" ? "Web" : "ウェブ",
+      categoryKey: "web",
       image: "./photo/Screenshot 2026-04-22 021103.png",
       description:
         language === "en"
           ? "A social media app with post creation and user interaction features."
           : "投稿作成やユーザー間のインタラクション機能を備えたソーシャルメディアアプリ。",
       techStack: ["TypeScript", "Svelte", "CSS", "Turso", "Vercel"],
+      githubUrl: "https://github.com/Numpang1812/pigeon",
+      liveUrl: "https://pigeon-sm.vercel.app/",
     },
     {
       id: 6,
       title: language === "en" ? "Story-Hub" : "Story-Hub",
       category: language === "en" ? "Web" : "ウェブ",
+      categoryKey: "web",
       image: "./photo/Screenshot 2026-04-22 021823.png",
       description:
         language === "en"
           ? "A community-based storytelling platform for creating, sharing, and reading user-generated stories."
           : "ユーザーがストーリーを作成・共有・閲覧できるコミュニティ型のストーリープラットフォーム。",
       techStack: ["React", "Tailwind CSS", "JavaScript", "MongoDB"],
+      githubUrl: "https://github.com/Seng-Mouyheang/Story-Hub",
+      liveUrl: "",
     },
     {
       id: 7,
       title: language === "en" ? "Japanese Quiz Game" : "日本語クイズゲーム",
       category: language === "en" ? "Web" : "ウェブ",
+      categoryKey: "web",
       image: "./photo/Screenshot 2026-04-22 020143.png",
       description:
         language === "en"
           ? "A quiz game that tests users' knowledge of Japanese language and culture with multiple-choice questions and interactive features."
           : "日本語と言語文化に関する知識を問う、選択式のインタラクティブなクイズゲーム。",
       techStack: ["TypeScript", "Svelte", "CSS", "Turso", "Vercel"],
+      githubUrl: "https://github.com/Numpang1812/quiz-game-app",
+      liveUrl: "https://quiz-game-app-liard.vercel.app/",
     },
   ];
 

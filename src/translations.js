@@ -24,34 +24,48 @@ export const translations = {
     work: {
       label: "My Work",
       title: "Featured Projects",
-      filters: ["all", "web", "ai"],
+      filters: [
+        { key: "all", label: "All" },
+        { key: "web", label: "Web" },
+        { key: "ai", label: "AI" },
+      ],
     },
     skills: {
       label: "Skills",
-      description:
-        "I have developed a diverse skill set through my ICT studies and project work, combining frontend development with emerging technologies.",
+      title: "Technical Stack & Expertise",
       categories: [
         {
-          name: "Frontend",
+          name: "Frontend Architecture",
+          badge: "UI / UX",
           description:
-            "HTML, CSS, JavaScript, TypeScript, Svelte, React, Tailwind CSS",
+            "Building responsive, accessible, and high-performance interfaces.",
+          skills: [
+            { label: "HTML / CSS", progress: "80%" },
+            { label: "JavaScript / React", progress: "75%" },
+            { label: "TypeScript", progress: "65%" },
+            { label: "Tailwind CSS", progress: "75%" },
+          ],
         },
         {
           name: "Backend & AI",
+          badge: "Systems & AI",
           description:
-            "Python, JavaScript, TypeScript, PHP, OCR, YOLO, TensorFlow",
+            "Developing scalable logic and applied computer vision models.",
+          skills: [
+            { label: "Python", progress: "75%" },
+            { label: "PHP", progress: "30%" },
+          ],
         },
-        { name: "Tools", description: "Git, GitHub, VS Code, Figma" },
-      ],
-      proficiencies: [
-        { label: "HTML / CSS", progress: "80%" },
-        { label: "JavaScript / React", progress: "75%" },
-        { label: "TypeScript", progress: "65%" },
-        { label: "Python", progress: "75%" },
-        { label: "PHP", progress: "30%" },
-        { label: "Tailwind CSS", progress: "75%" },
-        { label: "Git & GitHub", progress: "85%" },
-        { label: "Web Design", progress: "80%" },
+        {
+          name: "Tools & Collaboration",
+          badge: "Workflow",
+          description:
+            "Utilizing industry-standard version control and design software.",
+          skills: [
+            { label: "Git & GitHub", progress: "85%" },
+            { label: "Web Design", progress: "80%" },
+          ],
+        },
       ],
     },
     contact: {
@@ -60,28 +74,47 @@ export const translations = {
         "Have questions about my work or interested in collaborating? Feel free to reach out!",
       email: "Email",
       connect: "LinkedIn",
-      form: {
-        name: "Full Name",
-        email: "Email Address",
-        message: "Message",
-        namePlaceholder: "Your Name",
-        emailPlaceholder: "your.email@example.com",
-        messagePlaceholder: "Tell me about your inquiry...",
-        send: "Send Message",
-      },
     },
     footer: {
       copyright: "© 2024 Chanmonineath | ICT Student | AUPP",
     },
     about: {
       label: "About Me",
-      // ...existing code...
-      description:
-        "I am an ICT student at the American University of Phnom Penh (AUPP) with a GPA of 3.65, passionate about full-stack web development and applied AI. I focus on building practical, user-centered applications that solve real-world problems.\n\nKey Experience:\n\n  ★ Developed full-stack platforms such as WedEase (smart wedding planning) and Story-Hub (community storytelling).\n  ★ Built AI-powered solutions like Child Safe Detection Monitoring using YOLO for real-time object detection.\n  ★ Explored modern technologies: TypeScript, Svelte, React, Node.js, MongoDB.\n\nAchievements:\n\n  ★ Top 6 finalist, Innovative Tech Challenge: Co-developed Skin Apsor, an AI-driven skincare recommendation platform.\n  ★ Operations Team Administrator, AUPP Technology Center: Strengthened leadership, teamwork, and organizational skills.\n\nI am seeking an internship or entry-level role to contribute to impactful projects, learn from experienced professionals, and grow as a software developer.",
-      highlights: [
-        "Interests:",
-        "Web Developer & AI Enthusiast",
-        "Passionate About Tech for Social Impact",
+      title: "Software Engineer & AI Enthusiast",
+      subtitle:
+        "American University of Phnom Penh (AUPP) • ICT Student • GPA: 3.66",
+      summaryLabel: "Professional Summary",
+      summary:
+        "I am an ICT student at the American University of Phnom Penh (AUPP) with a GPA of 3.66, passionate about full-stack web development and applied AI. I focus on building practical, user-centered applications that solve real-world problems.",
+      stack:
+        "My technical stack spans modern frameworks and tools including TypeScript, Svelte, React, Node.js, MongoDB, and YOLO for computer vision applications.",
+      location: "Phnom Penh, Cambodia",
+      seeking: "Seeking 2026/2027 Internship",
+      workspaceLabel: "Development Environment",
+      workspaceTitle: "Full-Stack Architecture & Clean Code",
+      projectsTitle: "Key Technical Projects",
+      projects: [
+        {
+          title: "WedEase & Story-Hub:",
+          description:
+            "Full-stack smart wedding planning & community platforms.",
+        },
+        {
+          title: "Child Safe Detection:",
+          description: "AI-powered real-time object monitoring using YOLO.",
+        },
+      ],
+      honorsTitle: "Honors & Leadership",
+      honors: [
+        {
+          title: "Top 6 Finalist:",
+          description:
+            "Innovative Tech Challenge (Skin Apsor AI Skincare).",
+        },
+        {
+          title: "Admin, AUPP Tech Center:",
+          description: "Spearheading leadership & team operations.",
+        },
       ],
     },
     education: {
@@ -106,7 +139,7 @@ export const translations = {
     hero: {
       available: "AUPPのICT学生",
       title1: "こんにちは、私は",
-      title2: "Neath",
+      title2: "二アット",
       title3: "ウェブ開発とAIに情熱を持つ",
       description:
         "カンボジア・プノンペンにあるアメリカン大学 (AUPP) のICT学部生で、ウェブ開発、コンピュータビジョン、社会的インパクトのあるテクノロジーに情熱を注いでいます。ポートフォリオへようこそ！",
@@ -118,34 +151,48 @@ export const translations = {
     work: {
       label: "私の作品",
       title: "注目プロジェクト",
-      filters: ["すべて", "ウェブ", "AI"],
+      filters: [
+        { key: "all", label: "すべて" },
+        { key: "web", label: "ウェブ" },
+        { key: "ai", label: "AI" },
+      ],
     },
     skills: {
       label: "スキル",
-      description:
-        "ICTの学習とプロジェクトを通じて、フロントエンド開発と先端技術を組み合わせた多彩なスキルを身につけました。",
+      title: "技術スタックと専門性",
       categories: [
         {
-          name: "フロントエンド",
+          name: "フロントエンド設計",
+          badge: "UI / UX",
           description:
-            "HTML, CSS, JavaScript, TypeScript, Svelte, React, Tailwind CSS",
+            "レスポンシブでアクセシブル、高パフォーマンスなインターフェースを構築。",
+          skills: [
+            { label: "HTML / CSS", progress: "80%" },
+            { label: "JavaScript / React", progress: "75%" },
+            { label: "TypeScript", progress: "65%" },
+            { label: "Tailwind CSS", progress: "75%" },
+          ],
         },
         {
           name: "バックエンド & AI",
+          badge: "システム & AI",
           description:
-            "Python, JavaScript, TypeScript, PHP, OCR, YOLO, TensorFlow",
+            "実用的なロジックの実装と、応用コンピュータビジョンモデルの開発。",
+          skills: [
+            { label: "Python", progress: "75%" },
+            { label: "PHP", progress: "30%" },
+          ],
         },
-        { name: "ツール", description: "Git, GitHub, VS Code, Figma" },
-      ],
-      proficiencies: [
-        { label: "HTML / CSS", progress: "80%" },
-        { label: "JavaScript / React", progress: "75%" },
-        { label: "TypeScript", progress: "65%" },
-        { label: "Python", progress: "75%" },
-        { label: "PHP", progress: "30%" },
-        { label: "Tailwind CSS", progress: "75%" },
-        { label: "Git & GitHub", progress: "85%" },
-        { label: "Web Design", progress: "80%" },
+        {
+          name: "ツール & コラボレーション",
+          badge: "ワークフロー",
+          description:
+            "業界標準のバージョン管理とデザインソフトウェアを活用。",
+          skills: [
+            { label: "Git & GitHub", progress: "85%" },
+            { label: "Web Design", progress: "80%" },
+          ],
+        },
       ],
     },
     contact: {
@@ -154,27 +201,47 @@ export const translations = {
         "作品についてのご質問や協力のご相談があれば、お気軽にご連絡ください。",
       email: "メール",
       connect: "LinkedIn",
-      form: {
-        name: "フルネーム",
-        email: "メールアドレス",
-        message: "メッセージ",
-        namePlaceholder: "あなたの名前",
-        emailPlaceholder: "your.email@example.com",
-        messagePlaceholder: "お問い合わせ内容を教えてください...",
-        send: "送信",
-      },
     },
     footer: {
       copyright: "© 2024 Chanmonineath | ICT Student | AUPP",
     },
     about: {
       label: "私について",
-      description:
-        "私はアメリカン大学オブプノンペン (AUPP) のICT学部生で、GPAは3.65です。フルスタックのウェブ開発と応用AIに情熱を持ち、実用的でユーザー中心のアプリケーションづくりを重視しています。\n\n主な経験:\n\n  ★ WedEase（スマートな結婚式プランニング）や Story-Hub（コミュニティ向けストーリーテリング）などのフルスタックプラットフォームを開発。\n  ★ YOLOを用いたリアルタイム物体検出の Child Safe Detection Monitoring のようなAI搭載ソリューションを構築。\n  ★ TypeScript、Svelte、React、Node.js、MongoDB などの最新技術を実践的に学習。\n\n実績:\n\n  ★ Innovative Tech Challenge：Skin Apsor（AIベースのスキンケア推薦）でトップ6入賞。\n  ★ AUPP Technology Center のオペレーションチーム管理者として、リーダーシップやチームワークを強化。\n\nインターンまたはエントリーレベルの役割を探しており、インパクトのあるプロジェクトに貢献し、経験豊富なプロから学びながら開発者として成長したいと考えています。",
-      highlights: [
-        "興味：",
-        "ウェブ開発 & AI 愛好家",
-        "社会的インパクトのある技術に情熱を持つ",
+      title: "ソフトウェアエンジニア & AI愛好家",
+      subtitle:
+        "アメリカン大学プノンペン (AUPP) • ICT学部生 • GPA: 3.66",
+      summaryLabel: "職務概要",
+      summary:
+        "私はアメリカン大学プノンペン (AUPP) のICT学部生で、GPAは3.66です。フルスタックのウェブ開発と応用AIに情熱を持ち、実用的でユーザー中心のアプリケーションづくりを重視しています。",
+      stack:
+        "TypeScript、Svelte、React、Node.js、MongoDB、そしてコンピュータビジョン向けのYOLOなど、幅広い技術スタックを扱っています。",
+      location: "カンボジア・プノンペン",
+      seeking: "2026/2027年のインターンシップを希望",
+      workspaceLabel: "開発環境",
+      workspaceTitle: "フルスタック設計とクリーンなコード",
+      projectsTitle: "主要な技術プロジェクト",
+      projects: [
+        {
+          title: "WedEase & Story-Hub：",
+          description:
+            "スマートな結婚式プランニングとコミュニティ向けのフルスタックプラットフォーム。",
+        },
+        {
+          title: "Child Safe Detection：",
+          description: "YOLOを用いたAI搭載のリアルタイム物体監視。",
+        },
+      ],
+      honorsTitle: "受賞歴 & リーダーシップ",
+      honors: [
+        {
+          title: "トップ6入賞：",
+          description:
+            "Innovative Tech Challenge（Skin Apsor AIスキンケア）。",
+        },
+        {
+          title: "AUPP Tech Center 管理者：",
+          description: "リーダーシップとチーム運営を推進。",
+        },
       ],
     },
     education: {

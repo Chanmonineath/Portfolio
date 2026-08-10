@@ -1,0 +1,26 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "AUPP",
+    "Apsor",
+    "Chanmonineath",
+    "Numpang",
+    "Svelte",
+    "Vite",
+    "MongoDB",
+    "Vercel",
+    "Turso",
+    "lucide",
+    "Tailwind",
+    "tailwindcss",
+    "postcss",
+    "autoprefixer",
+    "YOLO",
+    "emailjs",
+    "WedEase",
+    "Jakarta",
+    "Techstack"
+  ],
+  "ignorePaths": ["node_modules", "dist", "package-lock.json"]
+}

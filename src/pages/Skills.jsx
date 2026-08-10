@@ -1,60 +1,75 @@
 import React from "react";
-import { Code } from "lucide-react";
+import { Layout, Brain, GitBranch } from "lucide-react";
+
+const categoryIcons = [Layout, Brain, GitBranch];
 
 export default function Skills({ t }) {
+  const s = t.skills;
+
   return (
     <section
       id="skills"
-      className="py-12 sm:py-16 md:py-32 bg-[#F2F2F2] px-3 sm:px-4 md:px-6"
+      className="py-12 sm:py-16 md:py-28 px-3 sm:px-6 md:px-8 bg-[#F2F2F2]"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 md:gap-16">
-        <div className="lg:col-span-5">
-          <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-400 mb-2 sm:mb-4">
-            {t.skills.label}
+      <div className="max-w-7xl mx-auto space-y-8 sm:space-y-10 md:space-y-12">
+        {/* Header */}
+        <div>
+          <h2 className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">
+            {s.label}
           </h2>
-          {/* Removed title as requested */}
-          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6 sm:mb-8 md:mb-12">
-            {t.skills.description}
+          <p className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
+            {s.title}
           </p>
-          <div className="grid grid-cols-1 gap-3 sm:gap-4">
-            {t.skills.categories.map((cat, idx) => (
+        </div>
+
+        {/* Bento skills grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          {s.categories.map((cat, idx) => {
+            const Icon = categoryIcons[idx % categoryIcons.length];
+            return (
               <div
                 key={idx}
-                className="p-4 sm:p-6 bg-white rounded-lg sm:rounded-2xl hover:shadow-lg transition-shadow duration-300"
+                className="bg-white border border-gray-200 p-5 sm:p-6 rounded-2xl sm:rounded-3xl space-y-5 hover:shadow-lg transition-shadow duration-300"
               >
-                <Code className="w-6 sm:w-8 h-6 sm:h-8 mb-3 sm:mb-4 text-gray-400" />
-                <h4 className="font-bold mb-2 text-sm sm:text-base">
-                  {cat.name}
-                </h4>
-                <p className="text-xs sm:text-sm text-gray-500">
-                  {cat.description}
-                </p>
+                <div className="flex items-center justify-between">
+                  <div className="p-3 rounded-2xl bg-[#F2F2F2] border border-gray-200 text-black">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-[#F2F2F2] text-gray-600 border border-gray-200">
+                    {cat.badge}
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-black text-base">
+                    {cat.name}
+                  </h3>
+                  <p className="text-gray-600 text-xs mt-1">
+                    {cat.description}
+                  </p>
+                </div>
+
+                <div className="space-y-3 pt-2">
+                  {cat.skills.map((skill, i) => (
+                    <div key={i}>
+                      <div className="flex justify-between text-xs font-mono mb-1">
+                        <span className="text-gray-700">{skill.label}</span>
+                        <span className="text-gray-500">
+                          {skill.progress}
+                        </span>
+                      </div>
+                      <div className="w-full bg-[#F2F2F2] h-1.5 rounded-full overflow-hidden border border-gray-200">
+                        <div
+                          className="bg-black h-full rounded-full transition-all duration-1000 ease-out"
+                          style={{ width: skill.progress }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-        <div className="lg:col-span-7 flex flex-col justify-center space-y-8 md:space-y-12">
-          {t.skills.proficiencies.map((skill, i) => (
-            <div
-              key={i}
-              className="animate-slideInUp"
-              style={{ animationDelay: `${i * 0.1}s` }}
-            >
-              <div className="flex justify-between mb-3 text-sm font-bold uppercase tracking-widest">
-                <span>{skill.label}</span>
-                <span>{skill.progress}</span>
-              </div>
-              <div className="h-1 w-full bg-gray-200 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-black transition-all duration-1000 ease-out"
-                  style={{
-                    width: skill.progress,
-                    animation: `slideIn 1s ease-out`,
-                  }}
-                ></div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
